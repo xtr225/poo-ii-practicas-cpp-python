@@ -1,0 +1,2 @@
+E001;Ana;10.50;APROBADO
+[{"codigo": "E001", "nombre": "Ana", "promedio": 10.5, "estado": "APROBADO"}]

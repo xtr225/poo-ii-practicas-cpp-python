@@ -1,0 +1,67 @@
+@startuml
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam classAttributeIconSize 0
+skinparam classBackgroundColor #F2F4F7
+skinparam classBorderColor #0057FF
+skinparam ArrowColor #0057FF
+hide empty members
+class Huesped {
+  -__id: str
+  +nombre: Any
+  +documento: Any
+  -__nombre: str
+  -__documento: str
+  +__init__(identificador: Any, nombre: Any, documento: Any): Any
+  +id(): Any
+  +nombre(): Any
+  +nombre(valor: Any): Any
+  +documento(): Any
+  +documento(valor: Any): Any
+  +etiqueta(): Any
+  +actualizar_documento(documento: Any): Any
+}
+class Habitacion {
+  -__numero: int
+  -__ocupantes: int
+  +tipo: Any
+  +capacidad: Any
+  +tarifa: Any
+  -__tipo: str
+  -__capacidad: int
+  -__tarifa: float
+  +__init__(numero: Any, tipo: Any, capacidad: Any, tarifa: Any): Any
+  +numero(): Any
+  +tipo(): Any
+  +tipo(valor: Any): Any
+  +capacidad(): Any
+  +capacidad(valor: Any): Any
+  +tarifa(): Any
+  +tarifa(valor: Any): Any
+  +plazas_libres(): Any
+  +alojar(cantidad: Any): Any
+  +liberar(): Any
+  +precio_noche(): Any
+}
+class Reserva {
+  -__codigo: str
+  -__entrada: date
+  -__salida: date
+  -__estado: str
+  +__init__(codigo: Any, entrada: Any, salida: Any): Any
+  +codigo(): Any
+  +entrada(): Any
+  +salida(): Any
+  +noches(): Any
+  +estado(): Any
+  +confirmar(): Any
+  +anular(): Any
+}
+legend bottom
+Modelo elaborado con asistencia a partir de fuentes y decisiones de dominio.
+Any indica que la firma Python no declara ese tipo; el contrato se detalla en el código y en C++.
+Composición representa vida dependiente; las referencias compartidas conservan vida independiente.
+endlegend
+@enduml

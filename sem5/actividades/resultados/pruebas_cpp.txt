@@ -1,0 +1,23 @@
+OK constructor valido
+OK sin cursos
+OK maximo seis
+OK duplicados
+OK fecha futura
+OK agregar y eliminar
+OK ultimo curso
+OK anulada
+OK diagnostico
+OK duplicada con contexto
+OK captura especifica
+OK result string
+OK acceso invalido
+OK pipeline
+OK cortocircuito
+OK ppa insuficiente
+OK hotel valido habitacion
+OK hotel valida reserva
+OK hotel result
+OK hotel constructor invalido
+OK hotel sin plazas
+OK hotel estado
+22/22 pruebas aprobadas

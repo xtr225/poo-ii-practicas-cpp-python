@@ -1,0 +1,18 @@
+test_anulada_no_bloquea (test_solucion.ContratosSemana8.test_anulada_no_bloquea) ... ok
+test_crear_valida (test_solucion.ContratosSemana8.test_crear_valida) ... ok
+test_demo_completa (test_solucion.ContratosSemana8.test_demo_completa) ... ok
+test_duplicado (test_solucion.ContratosSemana8.test_duplicado) ... ok
+test_estado_invalido_atomico (test_solucion.ContratosSemana8.test_estado_invalido_atomico) ... ok
+test_fechas_invalidas (test_solucion.ContratosSemana8.test_fechas_invalidas) ... ok
+test_filtro_orden_y_result (test_solucion.ContratosSemana8.test_filtro_orden_y_result) ... ok
+test_herencia_y_polimorfismo (test_solucion.ContratosSemana8.test_herencia_y_polimorfismo) ... ok
+test_interfaz_abstracta (test_solucion.ContratosSemana8.test_interfaz_abstracta) ... ok
+test_notificaciones_solo_simuladas (test_solucion.ContratosSemana8.test_notificaciones_solo_simuladas) ... ok
+test_reservas_adyacentes_validas (test_solucion.ContratosSemana8.test_reservas_adyacentes_validas) ... ok
+test_sin_huesped (test_solucion.ContratosSemana8.test_sin_huesped) ... ok
+test_solapamiento_rechazado (test_solucion.ContratosSemana8.test_solapamiento_rechazado) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.002s
+
+OK

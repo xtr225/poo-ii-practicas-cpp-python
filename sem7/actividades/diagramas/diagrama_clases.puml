@@ -1,0 +1,228 @@
+@startuml
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam classAttributeIconSize 0
+skinparam classBackgroundColor #F2F4F7
+skinparam classBorderColor #0057FF
+skinparam ArrowColor #0057FF
+hide empty members
+class ErrorHotel {
+}
+class ErrorDatosHotel {
+}
+class ErrorEstadoReserva {
+}
+class ErrorDisponibilidad {
+}
+class EstadoMatricula <<enum>> {
+  +REGISTRADA: EstadoMatricula
+  +VIGENTE: EstadoMatricula
+  +SUSPENDIDA: EstadoMatricula
+  +ANULADA: EstadoMatricula
+}
+class MaquinaEstados {
+  #_estado: Enum
+  #_TRANSICIONES: Any
+  #_historial: list[tuple]
+  +__init__(inicial: Any, transiciones: Any): Any
+  +estado(): Any
+  +historial(): Any
+  +transicionar(destino: Any, contexto: Any): Any
+}
+class Matricula {
+  #_codigo: Any
+  #_cursos: Any
+  #_maquina: MaquinaEstados
+  #_motivo: str
+  +__init__(codigo: Any, cursos: Any): Any
+  +estado(): Any
+  +historial(): Any
+  +motivo(): Any
+  +validar_pago(): Any
+  +suspender(motivo: Any): Any
+  +regularizar(): Any
+  +anular(): Any
+}
+class EstadoReserva <<enum>> {
+  +REGISTRADA: EstadoReserva
+  +CONFIRMADA: EstadoReserva
+  +HOSPEDADA: EstadoReserva
+  +FINALIZADA: EstadoReserva
+  +ANULADA: EstadoReserva
+}
+class Huesped {
+  -__id: str
+  +nombre: Any
+  +documento: Any
+  -__nombre: str
+  -__documento: str
+  +__init__(identificador: Any, nombre: Any, documento: Any): Any
+  +id(): Any
+  +nombre(): Any
+  +nombre(valor: Any): Any
+  +documento(): Any
+  +documento(valor: Any): Any
+  +etiqueta(): Any
+  +actualizar_documento(documento: Any): Any
+}
+class Habitacion {
+  -__numero: int
+  -__ocupantes: int
+  +tipo: Any
+  +capacidad: Any
+  +tarifa: Any
+  -__tipo: str
+  -__capacidad: int
+  -__tarifa: float
+  +__init__(numero: Any, tipo: Any, capacidad: Any, tarifa: Any): Any
+  +numero(): Any
+  +tipo(): Any
+  +tipo(valor: Any): Any
+  +capacidad(): Any
+  +capacidad(valor: Any): Any
+  +tarifa(): Any
+  +tarifa(valor: Any): Any
+  +plazas_libres(): Any
+  +alojar(cantidad: Any): Any
+  +liberar(): Any
+  +precio_noche(): Any
+}
+class HabitacionSimple {
+  +__init__(numero: Any, tarifa: Any): Any
+  +precio_noche(): Any
+}
+class HabitacionDoble {
+  +__init__(numero: Any, tarifa: Any): Any
+  +precio_noche(): Any
+}
+class Suite {
+  +__init__(numero: Any, tarifa: Any): Any
+  +precio_noche(): Any
+}
+class CalculadoraTarifa <<abstract>> {
+  +calcular(habitacion: Any, noches: Any): Any
+  +descripcion(): Any
+}
+class TarifaEstandar {
+  +calcular(habitacion: Any, noches: Any): Any
+  +descripcion(): Any
+}
+class INotificadorHotel <<abstract>> {
+  +enviar(destino: Any, mensaje: Any): Any
+  +es_disponible(): Any
+}
+class NotificadorSimulado {
+  +eventos: Any
+  +__init__(): Any
+  +es_disponible(): Any
+  +enviar(destino: Any, mensaje: Any): Any
+}
+class ReservaHotel {
+  -__codigo: str
+  -__huesped: Huesped
+  -__habitacion: Habitacion
+  -__entrada: str
+  -__salida: str
+  -__total: float
+  #_maquina: MaquinaEstados
+  +__init__(codigo: Any, huesped: Any, habitacion: Any, entrada: Any, salida: Any, total: Any): Any
+  +codigo(): Any
+  +huesped(): Any
+  +habitacion(): Any
+  +entrada(): Any
+  +salida(): Any
+  +total(): Any
+  +noches(): Any
+  +estado(): Any
+  +historial(): Any
+  #_verificar_invariante(): Any
+  #_transicionar(destino: Any): Any
+  +confirmar(): Any
+  +ingresar(): Any
+  +finalizar(): Any
+  +anular(): Any
+}
+class ServicioReservas {
+  -__huespedes: Repositorio[Huesped,str]
+  -__habitaciones: Repositorio[Habitacion,int]
+  -__reservas: Repositorio[ReservaHotel,str]
+  #_tarifa: CalculadoraTarifa
+  #_notificador: INotificadorHotel
+  +avisos: Any
+  +__init__(huespedes: Any, habitaciones: Any, reservas: Any, tarifa: Any, notificador: Any): Any
+  +huespedes(): Any
+  +habitaciones(): Any
+  +reservas(): Any
+  #_notificar(reserva: Any, mensaje: Any): Any
+  +crear_reserva(codigo: Any, huesped_id: Any, numero: Any, entrada: Any, salida: Any, notificar: Any): Any
+  #_solapadas(numero: Any, entrada: Any, salida: Any): Any
+  +anular_reserva(codigo: Any, notificar: Any): Any
+  +disponibles(entrada: Any, salida: Any): Any
+}
+class Repositorio {
+  #_fn_id: Callable[[T],ID]
+  #_datos: dict[ID,T]
+  +__init__(fn_id: Callable[[T], ID]): Any
+  +guardar(entidad: T): Any
+  +insertar(entidad: T): Any
+  +buscar(identificador: ID): Any
+  +buscar_resultado(identificador: ID): Any
+  +eliminar(identificador: ID): Any
+  +todos(): Any
+  +filtrar(predicado: Any): Any
+  +ordenar(key: Any, reverse: Any): Any
+  +acumular(inicial: Any, funcion: Any): Any
+  +contar(predicado: Any): Any
+  +existe(identificador: Any): Any
+  +primero(predicado: Any): Any
+  +estadisticas(atributo: Any): Any
+  +__len__(): Any
+  +__contains__(identificador: Any): Any
+  +__iter__(): Iterator[T]
+}
+class ColaAtencion {
+  #_cola: deque[T]
+  +__init__(): Any
+  +encolar(elemento: T): Any
+  +atender(): Any
+  +__len__(): Any
+  +__iter__(): Any
+}
+class PlanillaIterador {
+  #_ordenados: list[T]
+  +__init__(personal: Any, key: Any): Any
+  +__iter__(): Any
+}
+class Result {
+  #_exito: bool
+  #_dato: object
+  +__post_init__(): Any
+  +ok(valor: T): 'Result[T]'
+  +fallo(error: str): 'Result[T]'
+  +es_exito(): Any
+  +valor(): T
+  +error(): Any
+  +map(f: Callable[[T], 'Result[U]']): 'Result[U]'
+}
+ErrorHotel <|-- ErrorDatosHotel
+ErrorHotel <|-- ErrorEstadoReserva
+ErrorHotel <|-- ErrorDisponibilidad
+Habitacion <|-- HabitacionSimple
+Habitacion <|-- HabitacionDoble
+Habitacion <|-- Suite
+CalculadoraTarifa <|.. TarifaEstandar
+INotificadorHotel <|.. NotificadorSimulado
+ReservaHotel "1" *-- "1" MaquinaEstados : ciclo de vida
+ReservaHotel "0..*" --> "1" Huesped : titular
+ReservaHotel "0..*" --> "1" Habitacion : alojamiento
+ServicioReservas "1" o-- "3" Repositorio : registros
+ServicioReservas "1" --> "1" CalculadoraTarifa : calculo recibido
+ServicioReservas "1" --> "1" INotificadorHotel : canal recibido
+legend bottom
+Modelo elaborado con asistencia a partir de fuentes y decisiones de dominio.
+Any indica que la firma Python no declara ese tipo; el contrato se detalla en el código y en C++.
+Composición representa vida dependiente; las referencias compartidas conservan vida independiente.
+endlegend
+@enduml

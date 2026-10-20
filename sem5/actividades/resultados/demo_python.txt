@@ -1,0 +1,3 @@
+CURSOS=1
+EXITO=Inscrito: Juan Mamani en SIS206
+FALLO=Estudiante no encontrado

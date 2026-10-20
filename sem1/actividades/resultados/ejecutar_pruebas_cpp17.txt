@@ -1,0 +1,25 @@
+OK promedio sin notas
+OK promedio 16 y 14
+OK tres notas
+OK extremos 0 y 20
+OK limite 10.5
+OK nota negativa
+OK nota superior
+OK nota no finita
+OK nombre vacio
+OK codigo vacio
+OK codigo entero invalido
+OK escuela vacia
+OK curso vacio
+OK registrar y recuperar
+OK codigo duplicado
+OK codigo inexistente
+OK auditoria valida
+OK invalida sin auditoria
+OK reporte sin cambiar notas
+OK CSV escapa separadores
+OK JSON vacio
+OK JSON escapa caracteres
+OK JSON no cambia estado
+OK auditoria a archivo
+24/24 pruebas aprobadas

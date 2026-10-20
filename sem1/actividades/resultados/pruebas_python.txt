@@ -1,0 +1,35 @@
+test_extremos_validos (tests.test_baseline.PruebasCaracterizacion.test_extremos_validos) ... ok
+test_limite_aprobacion (tests.test_baseline.PruebasCaracterizacion.test_limite_aprobacion) ... ok
+test_promedio_tres_notas (tests.test_baseline.PruebasCaracterizacion.test_promedio_tres_notas) ... ok
+test_registro (tests.test_baseline.PruebasCaracterizacion.test_registro) ... ok
+test_reporte_no_cambia_notas (tests.test_baseline.PruebasCaracterizacion.test_reporte_no_cambia_notas) ... ok
+test_sin_notas (tests.test_baseline.PruebasCaracterizacion.test_sin_notas) ... ok
+test_json_y_csv_conservados (tests.test_experimento_antes.PruebasExtensionMonolitica.test_json_y_csv_conservados) ... ok
+test_escapes_y_unicode (tests.test_reportes_json.PruebasExtensionSeparada.test_escapes_y_unicode) ... ok
+test_json_y_csv_conservados (tests.test_reportes_json.PruebasExtensionSeparada.test_json_y_csv_conservados) ... ok
+test_sin_notas (tests.test_reportes_json.PruebasExtensionSeparada.test_sin_notas) ... ok
+test_vacio (tests.test_reportes_json.PruebasExtensionSeparada.test_vacio) ... ok
+test_constructor (tests.test_solucion.PruebasDominio.test_constructor) ... ok
+test_curso_vacio (tests.test_solucion.PruebasDominio.test_curso_vacio) ... ok
+test_extremos (tests.test_solucion.PruebasDominio.test_extremos) ... ok
+test_nota_tiene_campos_y_es_inmutable (tests.test_solucion.PruebasDominio.test_nota_tiene_campos_y_es_inmutable) ... ok
+test_promedio_16_14 (tests.test_solucion.PruebasDominio.test_promedio_16_14) ... ok
+test_promedio_vacio (tests.test_solucion.PruebasDominio.test_promedio_vacio) ... ok
+test_propiedades_sin_escritura (tests.test_solucion.PruebasDominio.test_propiedades_sin_escritura) ... ok
+test_rechaza_invalidas_sin_modificar_estado (tests.test_solucion.PruebasDominio.test_rechaza_invalidas_sin_modificar_estado) ... ok
+test_tres_notas (tests.test_solucion.PruebasDominio.test_tres_notas) ... ok
+test_umbral_aprobacion (tests.test_solucion.PruebasDominio.test_umbral_aprobacion) ... ok
+test_auditoria_en_archivo (tests.test_solucion.PruebasServicio.test_auditoria_en_archivo) ... ok
+test_auditoria_en_memoria (tests.test_solucion.PruebasServicio.test_auditoria_en_memoria) ... ok
+test_csv_escapa_delimitadores (tests.test_solucion.PruebasServicio.test_csv_escapa_delimitadores) ... ok
+test_csv_no_modifica_entidad (tests.test_solucion.PruebasServicio.test_csv_no_modifica_entidad) ... ok
+test_estudiante_inexistente (tests.test_solucion.PruebasServicio.test_estudiante_inexistente) ... ok
+test_invalida_no_genera_auditoria (tests.test_solucion.PruebasServicio.test_invalida_no_genera_auditoria) ... ok
+test_rechaza_duplicado (tests.test_solucion.PruebasServicio.test_rechaza_duplicado) ... ok
+test_registrar_y_recuperar (tests.test_solucion.PruebasServicio.test_registrar_y_recuperar) ... ok
+test_seis_casos_conservados (tests.test_solucion.PruebasServicio.test_seis_casos_conservados) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.079s
+
+OK

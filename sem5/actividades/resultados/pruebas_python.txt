@@ -1,0 +1,27 @@
+test_agregar_y_eliminar (test_solucion.ContratosSemana5.test_agregar_y_eliminar) ... ok
+test_anular_impide_modificar (test_solucion.ContratosSemana5.test_anular_impide_modificar) ... ok
+test_causa_preservada (test_solucion.ContratosSemana5.test_causa_preservada) ... ok
+test_constructor_valido (test_solucion.ContratosSemana5.test_constructor_valido) ... ok
+test_cortocircuito (test_solucion.ContratosSemana5.test_cortocircuito) ... ok
+test_diagnostico_e_invariante (test_solucion.ContratosSemana5.test_diagnostico_e_invariante) ... ok
+test_duplicados (test_solucion.ContratosSemana5.test_duplicados) ... ok
+test_fecha_futura (test_solucion.ContratosSemana5.test_fecha_futura) ... ok
+test_hotel_busqueda_result (test_solucion.ContratosSemana5.test_hotel_busqueda_result) ... ok
+test_hotel_capacidad (test_solucion.ContratosSemana5.test_hotel_capacidad) ... ok
+test_hotel_constructor_invalido (test_solucion.ContratosSemana5.test_hotel_constructor_invalido) ... ok
+test_hotel_estado (test_solucion.ContratosSemana5.test_hotel_estado) ... ok
+test_hotel_valida_reserva (test_solucion.ContratosSemana5.test_hotel_valida_reserva) ... ok
+test_hotel_valido_habitacion (test_solucion.ContratosSemana5.test_hotel_valido_habitacion) ... ok
+test_matricula_duplicada_contexto (test_solucion.ContratosSemana5.test_matricula_duplicada_contexto) ... ok
+test_maximo_seis (test_solucion.ContratosSemana5.test_maximo_seis) ... ok
+test_no_eliminar_ultimo (test_solucion.ContratosSemana5.test_no_eliminar_ultimo) ... ok
+test_pipeline_exito_y_fallo (test_solucion.ContratosSemana5.test_pipeline_exito_y_fallo) ... ok
+test_ppa_insuficiente (test_solucion.ContratosSemana5.test_ppa_insuficiente) ... ok
+test_result_impide_acceso_incorrecto (test_solucion.ContratosSemana5.test_result_impide_acceso_incorrecto) ... ok
+test_result_string_exito_y_fallo (test_solucion.ContratosSemana5.test_result_string_exito_y_fallo) ... ok
+test_sin_cursos (test_solucion.ContratosSemana5.test_sin_cursos) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.006s
+
+OK

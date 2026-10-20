@@ -1,0 +1,11 @@
+OK interfaz abstracta
+OK dos canales
+OK indisponible
+OK sms limites
+OK errores aislados
+OK vacio
+OK mock
+OK exportacion y firma
+OK inyeccion hotel
+OK noches invalidas
+10/10 pruebas aprobadas

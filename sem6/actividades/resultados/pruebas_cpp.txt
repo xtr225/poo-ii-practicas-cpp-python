@@ -1,0 +1,15 @@
+OK guardar buscar
+OK guardar actualiza
+OK insertar duplicado
+OK eliminar cero
+OK busqueda ausente
+OK filtrar contar
+OK ordenar
+OK acumular
+OK lista copia
+OK cola fifo
+OK iterador copia independiente
+OK ventanas
+OK ventanas invalidas
+OK hotel
+14/14 pruebas aprobadas

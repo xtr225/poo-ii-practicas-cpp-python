@@ -1,0 +1,13 @@
+OK polimorfismo
+OK interfaz
+OK reserva valida
+OK huesped ausente
+OK fecha invalida atomica
+OK codigo duplicado
+OK solapamiento
+OK adyacencia
+OK anulada no bloquea
+OK estado invalido atomico
+OK result y filtros
+OK sistema no copiable
+12/12 pruebas aprobadas

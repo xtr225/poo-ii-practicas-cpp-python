@@ -1,0 +1,9 @@
+OK estado inicial
+OK secuencia valida
+OK final irreversible
+OK motivo atomico
+OK regularizar precondicion
+OK guardia
+OK reserva final
+OK anular libera
+8/8 pruebas aprobadas

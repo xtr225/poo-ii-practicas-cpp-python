@@ -1,0 +1,3 @@
+[20210500] Juan Carlos Mamani Quispe (Ing. Sistemas)
+PPA: 15.00
+Error capturado: La nota debe estar entre 0 y 20

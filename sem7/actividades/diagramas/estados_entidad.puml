@@ -1,0 +1,25 @@
+@startuml
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam classAttributeIconSize 0
+skinparam classBackgroundColor #F2F4F7
+skinparam classBorderColor #0057FF
+skinparam ArrowColor #0057FF
+hide empty members
+title Ciclo de vida de ReservaHotel
+[*] --> REGISTRADA : construir con datos validos
+REGISTRADA --> CONFIRMADA : confirmar()
+REGISTRADA --> ANULADA : anular()
+CONFIRMADA --> HOSPEDADA : ingresar()
+CONFIRMADA --> ANULADA : anular()
+HOSPEDADA --> FINALIZADA : finalizar()
+FINALIZADA --> [*]
+ANULADA --> [*]
+note right of REGISTRADA
+ codigo no vacio
+ salida posterior a entrada
+ total positivo
+end note
+@enduml

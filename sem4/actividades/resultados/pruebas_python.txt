@@ -1,0 +1,16 @@
+test_abc_no_instanciable (test_solucion.ContratosSemana4.test_abc_no_instanciable) ... ok
+test_cambio_exportador_y_firma (test_solucion.ContratosSemana4.test_cambio_exportador_y_firma) ... ok
+test_canal_no_disponible (test_solucion.ContratosSemana4.test_canal_no_disponible) ... ok
+test_dos_canales (test_solucion.ContratosSemana4.test_dos_canales) ... ok
+test_error_aislado_no_detiene_otros (test_solucion.ContratosSemana4.test_error_aislado_no_detiene_otros) ... ok
+test_inyeccion_hotel (test_solucion.ContratosSemana4.test_inyeccion_hotel) ... ok
+test_lista_vacia (test_solucion.ContratosSemana4.test_lista_vacia) ... ok
+test_mock_sin_archivos (test_solucion.ContratosSemana4.test_mock_sin_archivos) ... ok
+test_noches_invalidas (test_solucion.ContratosSemana4.test_noches_invalidas) ... ok
+test_protocol_estructural (test_solucion.ContratosSemana4.test_protocol_estructural) ... ok
+test_sms_limites (test_solucion.ContratosSemana4.test_sms_limites) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.041s
+
+OK

@@ -1,0 +1,18 @@
+test_base_abstracta (test_solucion.ContratosSemana3.test_base_abstracta) ... ok
+test_categoria (test_solucion.ContratosSemana3.test_categoria) ... ok
+test_contrato_todas_subclases (test_solucion.ContratosSemana3.test_contrato_todas_subclases) ... ok
+test_cuadrado_incompatible_falla_como_se_espera (test_solucion.ContratosSemana3.test_cuadrado_incompatible_falla_como_se_espera) ... ok
+test_dni_invalido (test_solucion.ContratosSemana3.test_dni_invalido) ... ok
+test_figuras_corregidas (test_solucion.ContratosSemana3.test_figuras_corregidas) ... ok
+test_horas_limites (test_solucion.ContratosSemana3.test_horas_limites) ... ok
+test_hotel_polimorfismo (test_solucion.ContratosSemana3.test_hotel_polimorfismo) ... ok
+test_planilla_polimorfica (test_solucion.ContratosSemana3.test_planilla_polimorfica) ... ok
+test_proyectos (test_solucion.ContratosSemana3.test_proyectos) ... ok
+test_rectangulo_contrato (test_solucion.ContratosSemana3.test_rectangulo_contrato) ... ok
+test_remuneraciones (test_solucion.ContratosSemana3.test_remuneraciones) ... ok
+test_salario_y_bono (test_solucion.ContratosSemana3.test_salario_y_bono) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.001s
+
+OK

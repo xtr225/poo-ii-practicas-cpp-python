@@ -1,0 +1,20 @@
+test_busqueda_ausente (test_solucion.ContratosSemana6.test_busqueda_ausente) ... ok
+test_consultas_dominio (test_solucion.ContratosSemana6.test_consultas_dominio) ... ok
+test_consultas_hotel (test_solucion.ContratosSemana6.test_consultas_hotel) ... ok
+test_copia_lista_no_modifica_contenedor (test_solucion.ContratosSemana6.test_copia_lista_no_modifica_contenedor) ... ok
+test_eliminar_valor_falso (test_solucion.ContratosSemana6.test_eliminar_valor_falso) ... ok
+test_estadisticas (test_solucion.ContratosSemana6.test_estadisticas) ... ok
+test_fifo (test_solucion.ContratosSemana6.test_fifo) ... ok
+test_guardar_actualiza (test_solucion.ContratosSemana6.test_guardar_actualiza) ... ok
+test_guardar_y_buscar (test_solucion.ContratosSemana6.test_guardar_y_buscar) ... ok
+test_insertar_rechaza_duplicado (test_solucion.ContratosSemana6.test_insertar_rechaza_duplicado) ... ok
+test_iterador_reiniciable (test_solucion.ContratosSemana6.test_iterador_reiniciable) ... ok
+test_repositorio_vacio (test_solucion.ContratosSemana6.test_repositorio_vacio) ... ok
+test_resultado_none_guardado (test_solucion.ContratosSemana6.test_resultado_none_guardado) ... ok
+test_ventanas (test_solucion.ContratosSemana6.test_ventanas) ... ok
+test_ventanas_invalidas (test_solucion.ContratosSemana6.test_ventanas_invalidas) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.001s
+
+OK

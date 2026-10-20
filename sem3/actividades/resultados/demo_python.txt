@@ -1,0 +1,6 @@
+Mamani Quispe, Juan Carlos: S/ 1680.00
+Quispe Torres, Maria Elena: S/ 1620.00
+Huanca Lazo, Pedro: S/ 3150.00
+Flores Ramos, Ana Lucia: S/ 3000.00
+TOTAL=9450.00
+CONTRATOS=4

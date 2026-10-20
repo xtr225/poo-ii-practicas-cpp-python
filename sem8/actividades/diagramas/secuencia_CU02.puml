@@ -1,0 +1,49 @@
+@startuml
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam classAttributeIconSize 0
+skinparam classBackgroundColor #F2F4F7
+skinparam classBorderColor #0057FF
+skinparam ArrowColor #0057FF
+hide empty members
+title CU02 Anular reserva y consultar disponibilidad
+actor Recepcion as U
+participant ServicioReservas as S
+participant RepoReservas as RR
+participant ReservaHotel as R
+participant MaquinaEstados as M
+participant Notificador as N
+participant RepoHabitaciones as HH
+U -> S : anular_reserva(codigo, notificar)
+S -> RR : buscar_resultado(codigo)
+RR --> S : Result[ReservaHotel]
+alt Reserva encontrada
+  S -> R : anular()
+  R -> M : transicionar(ANULADA)
+  alt Transicion permitida
+    M --> R : historial actualizado
+    R --> S : estado ANULADA
+    opt Notificar solicitado
+      S -> N : es_disponible()
+      N --> S : bool
+      S -> N : enviar(huesped.id, anulacion)
+    end
+    S --> U : Result.ok(reserva)
+    U -> S : disponibles(entrada, salida)
+    S -> HH : filtrar(sin reservas activas solapadas)
+    loop Cada habitacion candidata
+      S -> RR : filtrar(solapamientos no anulados)
+      RR --> S : coincidencias
+    end
+    HH --> S : habitaciones disponibles
+    S --> U : lista ordenada por numero
+  else Estado final o no permitido
+    M --> R : Error de transicion
+    R --> U : ErrorEstadoReserva sin mutar estado
+  end
+else Reserva ausente
+  S --> U : Result.fallo(no encontrada)
+end
+@enduml

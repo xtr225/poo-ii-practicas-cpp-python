@@ -1,0 +1,17 @@
+OK curso valido
+OK codigo
+OK creditos
+OK cupos
+OK lleno
+OK reducir sin romper
+OK dni
+OK correo
+OK edad
+OK datos derivados
+OK limite docente
+OK huesped
+OK habitacion
+OK tarifa no finita
+OK reserva
+OK fecha inexistente
+16/16 pruebas aprobadas

@@ -1,0 +1,14 @@
+OK base abstracta y destructor virtual
+OK remuneraciones
+OK contratos todos
+OK dni
+OK horas
+OK categoria
+OK salario
+OK bono no debilita contrato
+OK proyectos
+OK rectangulo
+OK violacion intencional detectada
+OK alternativa figura
+OK hotel heterogeneo
+13/13 pruebas aprobadas

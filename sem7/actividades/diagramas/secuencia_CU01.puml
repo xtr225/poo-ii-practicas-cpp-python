@@ -1,0 +1,48 @@
+@startuml
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam classAttributeIconSize 0
+skinparam classBackgroundColor #F2F4F7
+skinparam classBorderColor #0057FF
+skinparam ArrowColor #0057FF
+hide empty members
+title CU01 Crear reserva de hotel
+actor Recepcion as U
+participant ServicioReservas as S
+participant RepoHuespedes as RH
+participant RepoHabitaciones as HH
+participant RepoReservas as RR
+participant CalculadoraTarifa as T
+participant ReservaHotel as R
+participant Notificador as N
+U -> S : crear_reserva(codigo, huesped, numero, entrada, salida)
+S -> RR : existe(codigo)
+RR --> S : bool
+S -> RH : buscar_resultado(huesped)
+RH --> S : Result[Huesped]
+S -> HH : buscar_resultado(numero)
+HH --> S : Result[Habitacion]
+alt Recursos presentes y codigo unico
+  S -> RR : filtrar(intervalos que se solapan)
+  RR --> S : reservas coincidentes
+  alt Sin solapamientos
+    S -> T : calcular(habitacion, noches)
+    T --> S : total
+    S -> R : ReservaHotel(codigo, huesped, habitacion, fechas, total)
+    S -> R : confirmar()
+    S -> RR : insertar(reserva)
+    opt Notificar solicitado
+      S -> N : es_disponible()
+      N --> S : bool
+      S -> N : enviar(huesped.id, confirmacion)
+    end
+    S --> U : Result.ok(reserva)
+  else Conflicto de fechas
+    S --> U : Result.fallo(sin disponibilidad)
+  end
+else Codigo repetido o recursos ausentes
+  S --> U : Result.fallo(motivo)
+end
+@enduml

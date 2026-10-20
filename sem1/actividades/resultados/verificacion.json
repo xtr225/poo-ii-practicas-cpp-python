@@ -1,0 +1,245 @@
+{
+  "fecha_utc": "2026-10-18T14:25:27.305204+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "plataforma": "Windows-11-10.0.26200-SP0",
+  "pruebas_python": 30,
+  "pruebas_cpp_por_estandar": 24,
+  "casos_csv_iguales": 6,
+  "demo_igual": true,
+  "resultados": [
+    {
+      "nombre": "version_compilador",
+      "comando": [
+        "C:\\TDM-GCC-64\\bin\\g++.EXE",
+        "--version"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "pruebas_python",
+      "comando": [
+        "C:\\Users\\LENOVO\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-v"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "demo_python",
+      "comando": [
+        "C:\\Users\\LENOVO\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "python.main"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "gestor_python",
+      "comando": [
+        "C:\\Users\\LENOVO\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "python.demo_gestor"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "compilar_main_cpp17",
+      "comando": [
+        "C:\\TDM-GCC-64\\bin\\g++.EXE",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\cpp\\main.cpp",
+        "-o",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\.build\\main_cpp17.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "ejecutar_main_cpp17",
+      "comando": [
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\.build\\main_cpp17.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "compilar_pruebas_cpp17",
+      "comando": [
+        "C:\\TDM-GCC-64\\bin\\g++.EXE",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\cpp\\pruebas.cpp",
+        "-o",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\.build\\pruebas_cpp17.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "ejecutar_pruebas_cpp17",
+      "comando": [
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\.build\\pruebas_cpp17.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "compilar_casos_csv_cpp17",
+      "comando": [
+        "C:\\TDM-GCC-64\\bin\\g++.EXE",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\cpp\\casos_csv.cpp",
+        "-o",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\.build\\casos_csv_cpp17.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "ejecutar_casos_csv_cpp17",
+      "comando": [
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\.build\\casos_csv_cpp17.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "compilar_demo_gestor_cpp17",
+      "comando": [
+        "C:\\TDM-GCC-64\\bin\\g++.EXE",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\cpp\\demo_gestor.cpp",
+        "-o",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\.build\\demo_gestor_cpp17.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "ejecutar_demo_gestor_cpp17",
+      "comando": [
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\.build\\demo_gestor_cpp17.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "compilar_main_cpp20",
+      "comando": [
+        "C:\\TDM-GCC-64\\bin\\g++.EXE",
+        "-std=c++20",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\cpp\\main.cpp",
+        "-o",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\.build\\main_cpp20.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "ejecutar_main_cpp20",
+      "comando": [
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\.build\\main_cpp20.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "compilar_pruebas_cpp20",
+      "comando": [
+        "C:\\TDM-GCC-64\\bin\\g++.EXE",
+        "-std=c++20",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\cpp\\pruebas.cpp",
+        "-o",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\.build\\pruebas_cpp20.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "ejecutar_pruebas_cpp20",
+      "comando": [
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\.build\\pruebas_cpp20.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "compilar_casos_csv_cpp20",
+      "comando": [
+        "C:\\TDM-GCC-64\\bin\\g++.EXE",
+        "-std=c++20",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\cpp\\casos_csv.cpp",
+        "-o",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\.build\\casos_csv_cpp20.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "ejecutar_casos_csv_cpp20",
+      "comando": [
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\.build\\casos_csv_cpp20.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "compilar_demo_gestor_cpp20",
+      "comando": [
+        "C:\\TDM-GCC-64\\bin\\g++.EXE",
+        "-std=c++20",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\cpp\\demo_gestor.cpp",
+        "-o",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\.build\\demo_gestor_cpp20.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "ejecutar_demo_gestor_cpp20",
+      "comando": [
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\.build\\demo_gestor_cpp20.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "compilar_baseline",
+      "comando": [
+        "C:\\TDM-GCC-64\\bin\\g++.EXE",
+        "-std=c++20",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\baseline\\ejecutar.cpp",
+        "-o",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\.build\\baseline.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "baseline_cpp",
+      "comando": [
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem1\\desarrollo\\.build\\baseline.exe"
+      ],
+      "retorno": 0
+    }
+  ]
+}

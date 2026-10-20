@@ -1,0 +1,82 @@
+[
+  [
+    "estructura",
+    "Archivos productivos antes de JSON",
+    1,
+    5,
+    "archivos",
+    "Solo modulos del dominio y servicios; excluye main y pruebas"
+  ],
+  [
+    "estructura",
+    "Clases antes de JSON",
+    1,
+    7,
+    "clases",
+    "Nodos ClassDef de los mismos modulos"
+  ],
+  [
+    "estructura",
+    "Metodos funcionales de Gestor o Servicio",
+    3,
+    3,
+    "metodos",
+    "Excluye constructor y metodos privados"
+  ],
+  [
+    "estructura",
+    "Dependencias de archivos o consola en la entidad",
+    2,
+    0,
+    "dependencias",
+    "open y print en el monolito; ausentes de Estudiante"
+  ],
+  [
+    "json",
+    "Archivos productivos afectados por el cambio",
+    1,
+    1,
+    "archivos",
+    "Cuenta archivos editados o agregados; excluye tests y documentacion"
+  ],
+  [
+    "json",
+    "Archivos productivos existentes editados",
+    1,
+    0,
+    "archivos",
+    "Compara monolito contra modulo nuevo de generador"
+  ],
+  [
+    "json",
+    "Clases existentes editadas",
+    1,
+    0,
+    "clases",
+    "Cambio de codigo dentro de una clase existente"
+  ],
+  [
+    "json",
+    "Clases nuevas",
+    0,
+    1,
+    "clases",
+    "GeneradorJSON en la variante separada"
+  ],
+  [
+    "json",
+    "Regresiones en seis casos validos",
+    0,
+    0,
+    "casos",
+    "Misma salida CSV en las seis entradas caracterizadas"
+  ],
+  [
+    "json",
+    "Tiempo de elaboracion asistida",
+    0.14246687094370525,
+    0.38433849811553955,
+    "minutos",
+    "Una observacion por variante; incluye edicion y pruebas, no tiempo del estudiante"
+  ]
+]

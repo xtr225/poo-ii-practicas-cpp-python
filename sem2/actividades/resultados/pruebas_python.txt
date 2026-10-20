@@ -1,0 +1,22 @@
+test_asignacion_limite_tres_y_duplicado (test_solucion.ContratosSemana2.test_asignacion_limite_tres_y_duplicado) ... ok
+test_codigos_invalidos (test_solucion.ContratosSemana2.test_codigos_invalidos) ... ok
+test_constructor_valido (test_solucion.ContratosSemana2.test_constructor_valido) ... ok
+test_creditos_fronteras (test_solucion.ContratosSemana2.test_creditos_fronteras) ... ok
+test_cupos_fronteras (test_solucion.ContratosSemana2.test_cupos_fronteras) ... ok
+test_curso_lleno (test_solucion.ContratosSemana2.test_curso_lleno) ... ok
+test_dni_correo (test_solucion.ContratosSemana2.test_dni_correo) ... ok
+test_edad_antes_y_en_cumpleanos (test_solucion.ContratosSemana2.test_edad_antes_y_en_cumpleanos) ... ok
+test_habitacion_capacidad (test_solucion.ContratosSemana2.test_habitacion_capacidad) ... ok
+test_habitacion_tarifa (test_solucion.ContratosSemana2.test_habitacion_tarifa) ... ok
+test_huesped_documento (test_solucion.ContratosSemana2.test_huesped_documento) ... ok
+test_name_mangling (test_solucion.ContratosSemana2.test_name_mangling) ... ok
+test_no_reducir_cupos_bajo_inscritos (test_solucion.ContratosSemana2.test_no_reducir_cupos_bajo_inscritos) ... ok
+test_propiedades_derivadas_cambian_con_curso (test_solucion.ContratosSemana2.test_propiedades_derivadas_cambian_con_curso) ... ok
+test_propiedades_solo_lectura (test_solucion.ContratosSemana2.test_propiedades_solo_lectura) ... ok
+test_reserva_fecha_invalida (test_solucion.ContratosSemana2.test_reserva_fecha_invalida) ... ok
+test_reserva_fechas_y_negocio (test_solucion.ContratosSemana2.test_reserva_fechas_y_negocio) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.004s
+
+OK

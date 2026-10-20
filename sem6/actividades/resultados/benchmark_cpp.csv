@@ -1,0 +1,17 @@
+lenguaje,n,estructura,consultas,repeticiones,construccion_ms,busqueda_lote_ms,aciertos
+Cpp,1000,vector,200,3,0.0012,0.0617,102
+Cpp,1000,unordered_map,200,3,0.0791,0.0017,102
+Cpp,1000,unordered_set,200,3,0.0513,0.0015,102
+Cpp,1000,binary_search,200,3,0.0007,0.0079,102
+Cpp,10000,vector,200,3,0.0367,0.6394,101
+Cpp,10000,unordered_map,200,3,0.641,0.0015,101
+Cpp,10000,unordered_set,200,3,0.6447,0.0021,101
+Cpp,10000,binary_search,200,3,0.0309,0.0099,101
+Cpp,100000,vector,200,3,0.1205,4.9762,102
+Cpp,100000,unordered_map,200,3,7.7163,0.0027,102
+Cpp,100000,unordered_set,200,3,8.7971,0.0026,102
+Cpp,100000,binary_search,200,3,0.1857,0.0084,102
+Cpp,1000000,vector,200,3,2.2593,42.0091,127
+Cpp,1000000,unordered_map,200,3,124.153,0.0157,127
+Cpp,1000000,unordered_set,200,3,104.831,0.0101,127
+Cpp,1000000,binary_search,200,3,1.1283,0.0222,127

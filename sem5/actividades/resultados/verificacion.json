@@ -1,0 +1,98 @@
+{
+  "fecha_utc": "2026-10-18T16:42:04.496378+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "cpp": "g++.EXE (tdm64-1) 10.3.0",
+  "pruebas_python": 22,
+  "pruebas_pytest": 22,
+  "pruebas_cpp": 22,
+  "demo_equivalente": true,
+  "registros": [
+    {
+      "nombre": "pruebas_python",
+      "comando": [
+        "C:\\Users\\LENOVO\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "pytest",
+      "comando": [
+        "C:\\Users\\LENOVO\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "-p",
+        "no:cacheprovider"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "demo_python",
+      "comando": [
+        "C:\\Users\\LENOVO\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "python.main"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "version_cpp",
+      "comando": [
+        "C:\\TDM-GCC-64\\bin\\g++.EXE",
+        "--version"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "compilar_main",
+      "comando": [
+        "C:\\TDM-GCC-64\\bin\\g++.EXE",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem5\\desarrollo\\cpp\\main.cpp",
+        "-o",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem5\\desarrollo\\.build\\main.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "main_cpp",
+      "comando": [
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem5\\desarrollo\\.build\\main.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "compilar_pruebas",
+      "comando": [
+        "C:\\TDM-GCC-64\\bin\\g++.EXE",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem5\\desarrollo\\cpp\\pruebas.cpp",
+        "-o",
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem5\\desarrollo\\.build\\pruebas.exe"
+      ],
+      "retorno": 0
+    },
+    {
+      "nombre": "pruebas_cpp",
+      "comando": [
+        "D:\\Sem 2-2026\\POO-2\\practicas del semestre\\sem5\\desarrollo\\.build\\pruebas.exe"
+      ],
+      "retorno": 0
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+test_anulacion_libera_disponibilidad (test_solucion.ContratosSemana7.test_anulacion_libera_disponibilidad) ... ok
+test_estado_inicial (test_solucion.ContratosSemana7.test_estado_inicial) ... ok
+test_final_irreversible (test_solucion.ContratosSemana7.test_final_irreversible) ... ok
+test_guardia (test_solucion.ContratosSemana7.test_guardia) ... ok
+test_historial_solo_consulta (test_solucion.ContratosSemana7.test_historial_solo_consulta) ... ok
+test_regularizar_requiere_suspension (test_solucion.ContratosSemana7.test_regularizar_requiere_suspension) ... ok
+test_reserva_secuencia_y_final (test_solucion.ContratosSemana7.test_reserva_secuencia_y_final) ... ok
+test_secuencia_valida (test_solucion.ContratosSemana7.test_secuencia_valida) ... ok
+test_suspension_invalida_no_cambia_motivo (test_solucion.ContratosSemana7.test_suspension_invalida_no_cambia_motivo) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.002s
+
+OK
